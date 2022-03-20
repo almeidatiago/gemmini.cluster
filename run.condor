@@ -1,6 +1,6 @@
 getenv = true
 
-executable  = ./simulator-chipyard-CustomGemminiSoCConfig template-baremetal
+executable  = simulator-chipyard-CustomGemminiSoCConfig template-baremetal
 arguments   = $(Process)
 output      = results/teste.out
 error       = results/teste.err
