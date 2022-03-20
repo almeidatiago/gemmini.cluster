@@ -1,1 +1,1 @@
-./simulator-chipyard-CustomGemminiSoCConfig template-baremetal  
+./simulator-chipyard-CustomGemminiSoCConfig template-baremetal 1>run.out 
