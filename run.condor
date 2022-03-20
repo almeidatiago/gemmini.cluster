@@ -1,6 +1,6 @@
 getenv = true
 
-executable  = ./simulator-chipyard-CustomGemminiSoCConfig template-baremetal 
+executable  = ./run.sh
 arguments   = $(Process)
 output      = /results/condor.teste.out
 error       = /results/condor.teste.err
