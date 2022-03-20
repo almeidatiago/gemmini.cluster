@@ -1,6 +1,6 @@
 getenv = true
 
-executable  = /generators/gemmini/scripts/run-verilator.sh template
+executable  = ./scripts/run-verilator.sh template
 arguments   = $(Process)
 output      = /results/condor.teste.out
 error       = /results/condor.teste.err
