@@ -1,0 +1,10 @@
+getenv = true
+
+executable  = ./simulator-chipyard-CustomGemminiSoCConfig template-baremetal 
+arguments   = $(Process)
+output      = /results/condor.teste.out
+error       = /results/condor.teste.err
+log         = /results/condor.teste.log
+
+request_cpus = 4
+queue 1
