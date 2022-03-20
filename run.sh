@@ -1,2 +1,2 @@
 #!/bin/bash
-time ./simulator-chipyard-CustomGemminiSoCConfig template-baremetal 1>run.out 
+time ./simulator-chipyard-CustomGemminiSoCConfig resnet50-baremetal 1>run.out 
