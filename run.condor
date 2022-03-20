@@ -2,9 +2,9 @@ getenv = true
 
 executable  = ./run.sh
 arguments   = $(Process)
-#output      = /results/condor.teste.out
-#error       = /results/condor.teste.err
-#log         = /results/condor.teste.log
+output      = /results/teste.out
+error       = /results/teste.err
+log         = /results/teste.log
 
 request_cpus = 4
 queue 1
