@@ -6,5 +6,5 @@ output      = results/teste.out
 error       = results/teste.err
 log         = results/teste.log
 
-request_cpus = 4
+request_cpus = 16
 queue 1
