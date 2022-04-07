@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#set -ex
-
 help () {
   echo "Usage: $0 [-h] -m MULT_NAME -n NUM_NODES"
   echo
@@ -16,10 +14,7 @@ help () {
   exit
 }
 
-name=""
-nodes="10"
-
-while getopts :n:m: flag
+while getopts m:n: flag
 do
   case "${flag}" in
     m) name=${OPTARG} ;;
@@ -34,7 +29,6 @@ if [ -z "${name}" ] || [ -z "${nodes}" ]; then
     help
 fi
 
-
 source ~/chipyard/env.sh
 
 # Copy the files to the docker to compile
@@ -44,8 +38,11 @@ cp src/${name}.scala ~/chipyard/generators/gemmini/src/main/scala/gemmini/${name
 cp src/${name}.v ~/chipyard/generators/gemmini/src/main/scala/gemmini/${name}.v
 
 # Build the simulator
-cd ~/chipyard/generators/gemmini
-./scripts/build-verilator.sh
+#cd ~/chipyard/generators/gemmini
+#./scripts/build-verilator.sh
+
+cd ~/chipyard/sims/verilator/
+make -j$(nproc) ${debug} CONFIG=CustomGemminiSoCConfig VERILATOR_THREADS=${nodes}
 
 # Copy simulator to git repo
 cd -
@@ -61,8 +58,8 @@ echo "set -ex" >> $file
 echo >> $file
 echo "rm -rf results" >> $file
 echo "mkdir -p results" >> $file
-echo 'find build/bench/conv-def-b/*| sort -Vr | parallel -j'${nodes}' --halt now,fail=1 "echo {};sims/simulator-chipyard-${name}GemminiSoCConfig {}" \ &>> results/conv-def-b.txt' >> $file
-echo 'find build/bench/conv-def-i/* | sort -Vr | parallel -j'${nodes}' --halt now,fail=1 "echo {};sims/simulator-chipyard-${name}GemminiSoCConfig {}" &>> results/conv-def-in-dim.txt' >> $file
+echo 'find build/bench/conv-def-b/* | sort -Vr | parallel -j'${nodes}' --halt now,fail=1 "echo {};sims/simulator-chipyard-'${name}'GemminiSoCConfig {}" &>> results/conv-def-b.txt' >> $file
+echo 'find build/bench/conv-def-i/* | sort -Vr | parallel -j'${nodes}' --halt now,fail=1 "echo {};sims/simulator-chipyard-'${name}'GemminiSoCConfig {}" &>> results/conv-def-i.txt' >> $file
 echo >> $file
 cat $file
 
@@ -74,7 +71,7 @@ file="run_${name}.condor"
 echo "getenv = true" > $file
 echo >> $file
 echo "executable  = ./test_${name}.sh" >> $file
-echo "arguments   = $(Process)" >> $file
+echo 'arguments   = $(Process)' >> $file
 echo "output      = results/${name}.out" >> $file
 echo "error       = results/${name}.err" >> $file
 echo "log         = results/${name}.log" >> $file

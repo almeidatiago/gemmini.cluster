@@ -1,0 +1,11 @@
+getenv = true
+
+executable  = ./test_mul16s_HHP.sh
+arguments   = $(Process)
+output      = results/mul16s_HHP.out
+error       = results/mul16s_HHP.err
+log         = results/mul16s_HHP.log
+
+request_cpus = 10
+queue 1
+
