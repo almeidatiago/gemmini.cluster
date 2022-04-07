@@ -29,24 +29,24 @@ if [ -z "${name}" ] || [ -z "${nodes}" ]; then
     help
 fi
 
-source ~/chipyard/env.sh
+#source ~/chipyard/env.sh
 
 # Copy the files to the docker to compile
-cp src/CustomConfigs.scala ~/chipyard/generators/gemmini/src/main/scala/gemmini/CustomConfigs.scala
-cp src/Arithmetic_${name}.scala ~/chipyard/generators/gemmini/src/main/scala/gemmini/Arithmetic.scala
-cp src/${name}.scala ~/chipyard/generators/gemmini/src/main/scala/gemmini/${name}.scala
-cp src/${name}.v ~/chipyard/generators/gemmini/src/main/scala/gemmini/${name}.v
+#cp src/CustomConfigs.scala ~/chipyard/generators/gemmini/src/main/scala/gemmini/CustomConfigs.scala
+#cp src/Arithmetic_${name}.scala ~/chipyard/generators/gemmini/src/main/scala/gemmini/Arithmetic.scala
+#cp src/${name}.scala ~/chipyard/generators/gemmini/src/main/scala/gemmini/${name}.scala
+#cp src/${name}.v ~/chipyard/generators/gemmini/src/main/scala/gemmini/${name}.v
 
 # Build the simulator
 #cd ~/chipyard/generators/gemmini
 #./scripts/build-verilator.sh
 
-cd ~/chipyard/sims/verilator/
-make -j$(nproc) ${debug} CONFIG=CustomGemminiSoCConfig VERILATOR_THREADS=${nodes}
+#cd ~/chipyard/sims/verilator/
+#make -j$(nproc) ${debug} CONFIG=CustomGemminiSoCConfig VERILATOR_THREADS=${nodes}
 
 # Copy simulator to git repo
-cd -
-cp ~/chipyard/sims/verilator/simulator-chipyard-CustomGemminiSoCConfig sims/simulator-chipyard-${name}GemminiSoCConfig
+#cd -
+#cp ~/chipyard/sims/verilator/simulator-chipyard-CustomGemminiSoCConfig sims/simulator-chipyard-${name}GemminiSoCConfig
 
 # Create files to simulate
 # Bash file
@@ -58,8 +58,8 @@ echo "set -ex" >> $file
 echo >> $file
 #echo "rm -rf results" >> $file
 #echo "mkdir -p results" >> $file
-echo 'find build/bench/conv-def-b/* | sort -Vr | xargs -I {} bash -c "sims/simulator-chipyard-'${name}'GemminiSoCConfig {}" &>> results/'${name}'_conv-def-b.txt' >> $file
-echo 'find build/bench/conv-def-i/* | sort -Vr | xargs -I {} bash -c "sims/simulator-chipyard-'${name}'GemminiSoCConfig {}" &>> results/'${name}'_conv-def-i.txt' >> $file
+echo 'find build/bench/conv-def-b/* | sort -Vr | xargs -I {} bash -c "echo {}; sims/simulator-chipyard-'${name}'GemminiSoCConfig {}" &>> results/'${name}'_conv-def-b.txt' >> $file
+echo 'find build/bench/conv-def-i/* | sort -Vr | xargs -I {} bash -c "echo {}; sims/simulator-chipyard-'${name}'GemminiSoCConfig {}" &>> results/'${name}'_conv-def-i.txt' >> $file
 echo >> $file
 cat $file
 

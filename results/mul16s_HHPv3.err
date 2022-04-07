@@ -1,3 +1,0 @@
-+ sort -Vr
-+ xargs -I '{}' bash -c 'sims/simulator-chipyard-mul16s_HHPv3GemminiSoCConfig {}'
-+ find build/bench/conv-def-b/conv-def-b1 build/bench/conv-def-b/conv-def-b10 build/bench/conv-def-b/conv-def-b2 build/bench/conv-def-b/conv-def-b3 build/bench/conv-def-b/conv-def-b4 build/bench/conv-def-b/conv-def-b5 build/bench/conv-def-b/conv-def-b6 build/bench/conv-def-b/conv-def-b7 build/bench/conv-def-b/conv-def-b8 build/bench/conv-def-b/conv-def-b9

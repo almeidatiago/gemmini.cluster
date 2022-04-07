@@ -1,6 +1,0 @@
-+ sort -Vr
-+ xargs -I '{}' bash -c 'sims/simulator-chipyard-mul16sGemminiSoCConfig {}'
-+ find build/bench/conv-def-b/conv-def-b1 build/bench/conv-def-b/conv-def-b10 build/bench/conv-def-b/conv-def-b2 build/bench/conv-def-b/conv-def-b3 build/bench/conv-def-b/conv-def-b4 build/bench/conv-def-b/conv-def-b5 build/bench/conv-def-b/conv-def-b6 build/bench/conv-def-b/conv-def-b7 build/bench/conv-def-b/conv-def-b8 build/bench/conv-def-b/conv-def-b9
-+ sort -Vr
-+ xargs -I '{}' bash -c 'sims/simulator-chipyard-mul16sGemminiSoCConfig {}'
-+ find build/bench/conv-def-i/conv-def-i10 build/bench/conv-def-i/conv-def-i100 build/bench/conv-def-i/conv-def-i20 build/bench/conv-def-i/conv-def-i30 build/bench/conv-def-i/conv-def-i40 build/bench/conv-def-i/conv-def-i50 build/bench/conv-def-i/conv-def-i60 build/bench/conv-def-i/conv-def-i70 build/bench/conv-def-i/conv-def-i80 build/bench/conv-def-i/conv-def-i90
