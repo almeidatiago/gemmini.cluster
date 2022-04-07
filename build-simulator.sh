@@ -81,3 +81,6 @@ echo "queue 1" >> $file
 echo  >> $file
 cat $file
 
+file="results/run_${name}.log"
+echo > $file
+cat $file
