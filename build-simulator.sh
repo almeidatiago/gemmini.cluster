@@ -58,8 +58,8 @@ echo "set -ex" >> $file
 echo >> $file
 echo "rm -rf results" >> $file
 echo "mkdir -p results" >> $file
-echo 'find build/bench/conv-def-b/* | sort -Vr | parallel -j'${nodes}' --halt now,fail=1 "echo {};sims/simulator-chipyard-'${name}'GemminiSoCConfig {}" &>> results/conv-def-b.txt' >> $file
-echo 'find build/bench/conv-def-i/* | sort -Vr | parallel -j'${nodes}' --halt now,fail=1 "echo {};sims/simulator-chipyard-'${name}'GemminiSoCConfig {}" &>> results/conv-def-i.txt' >> $file
+echo 'find build/bench/conv-def-b/* | sort -Vr | parallel -j'${nodes}' --halt now,fail=1 "echo {};sims/simulator-chipyard-'${name}'GemminiSoCConfig {}" &>> results/'${name}'_conv-def-b.txt' >> $file
+echo 'find build/bench/conv-def-i/* | sort -Vr | parallel -j'${nodes}' --halt now,fail=1 "echo {};sims/simulator-chipyard-'${name}'GemminiSoCConfig {}" &>> results/'${name}'_conv-def-i.txt' >> $file
 echo >> $file
 cat $file
 
