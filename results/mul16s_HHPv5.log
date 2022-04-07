@@ -1,0 +1,11 @@
+000 (126767.000.000) 04/07 17:32:28 Job submitted from host: <10.68.254.1:20309?addrs=10.68.254.1-20309>
+...
+007 (126767.000.000) 04/07 17:32:37 Shadow exception!
+	Error from slot1@n21.lsc.ic.unicamp.br: Failed to open '/home/tiago.almeida/gemmini.cluster/results/mul16s_HHPv5.out' as standard output: No such file or directory (errno 2)
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (126767.000.000) 04/07 17:32:37 Job was held.
+	Error from slot1@n21.lsc.ic.unicamp.br: Failed to open '/home/tiago.almeida/gemmini.cluster/results/mul16s_HHPv5.out' as standard output: No such file or directory (errno 2)
+	Code 7 Subcode 2
+...
