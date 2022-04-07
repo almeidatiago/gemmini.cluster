@@ -2,8 +2,8 @@
 
 set -ex
 
-rm -rf results
-mkdir -p results
+#rm -rf results
+#mkdir -p results
 find build/bench/conv-def-b/* | sort -Vr | parallel -j10 --halt now,fail=1 "echo {};sims/simulator-chipyard-mul16s_HHPGemminiSoCConfig {}" &>> results/conv-def-b.txt
 find build/bench/conv-def-i/* | sort -Vr | parallel -j10 --halt now,fail=1 "echo {};sims/simulator-chipyard-mul16s_HHPGemminiSoCConfig {}" &>> results/conv-def-i.txt
 
