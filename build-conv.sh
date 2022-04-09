@@ -29,7 +29,7 @@ build () {
     riscv64-unknown-elf-gcc $CFLAGS $INCLUDE -DID_STRING=  -nostdlib -nostartfiles \
     -static $LINKER_SCRIPT -DBAREMETAL=1  $SRC -o $1 \
      $FILES \
-    -D BATCH_SIZE=$2 -D IN_DIM=$3 -D IN_CHANNELS=$4 -D OUT_CHANNELS=$5 -D KERNEL_DIM=$6 -D PADDING=$7 -D STRIDE=$8 -D __GEMMINI_ONLY
+    -D BATCH_SIZE=$2 -D IN_DIM=$3 -D IN_CHANNELS=$4 -D OUT_CHANNELS=$5 -D KERNEL_DIM=$6 -D PADDING=$7 -D STRIDE=$8 #-D __GEMMINI_ONLY
 }
 
 for i in $BATCHES
