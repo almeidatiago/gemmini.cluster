@@ -1,0 +1,142 @@
+000 (126772.000.000) 04/07 18:08:36 Job submitted from host: <10.68.254.1:20309?addrs=10.68.254.1-20309>
+...
+001 (126772.000.000) 04/07 18:08:54 Job executing on host: <10.68.100.17:10867?addrs=10.68.100.17-10867>
+...
+006 (126772.000.000) 04/07 18:09:03 Image size of job updated: 12388
+	5  -  MemoryUsage of job (MB)
+	4252  -  ResidentSetSize of job (KB)
+...
+006 (126772.000.000) 04/07 18:14:01 Image size of job updated: 12584
+	5  -  MemoryUsage of job (MB)
+	4252  -  ResidentSetSize of job (KB)
+...
+006 (126772.000.000) 04/07 18:19:01 Image size of job updated: 12784
+	5  -  MemoryUsage of job (MB)
+	4252  -  ResidentSetSize of job (KB)
+...
+006 (126772.000.000) 04/07 18:24:02 Image size of job updated: 12984
+	5  -  MemoryUsage of job (MB)
+	4252  -  ResidentSetSize of job (KB)
+...
+006 (126772.000.000) 04/07 18:29:05 Image size of job updated: 13160
+	5  -  MemoryUsage of job (MB)
+	4252  -  ResidentSetSize of job (KB)
+...
+006 (126772.000.000) 04/07 22:14:27 Image size of job updated: 13160
+	5  -  MemoryUsage of job (MB)
+	4472  -  ResidentSetSize of job (KB)
+...
+006 (126772.000.000) 04/07 22:29:27 Image size of job updated: 13172
+	5  -  MemoryUsage of job (MB)
+	4472  -  ResidentSetSize of job (KB)
+...
+006 (126772.000.000) 04/07 22:34:26 Image size of job updated: 13372
+	5  -  MemoryUsage of job (MB)
+	4472  -  ResidentSetSize of job (KB)
+...
+006 (126772.000.000) 04/07 22:39:25 Image size of job updated: 13520
+	5  -  MemoryUsage of job (MB)
+	4476  -  ResidentSetSize of job (KB)
+...
+006 (126772.000.000) 04/07 22:44:31 Image size of job updated: 13524
+	5  -  MemoryUsage of job (MB)
+	4480  -  ResidentSetSize of job (KB)
+...
+005 (126772.000.000) 04/08 01:51:54 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 3 05:00:17, Sys 0 00:08:25  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 3 05:00:17, Sys 0 00:08:25  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                10        10
+	   Disk (KB)            :        1        1    625715
+	   Memory (MB)          :        5        1         1
+...
+000 (126778.000.000) 04/09 14:32:37 Job submitted from host: <10.68.254.1:20309?addrs=10.68.254.1-20309>
+...
+007 (126778.000.000) 04/09 14:32:51 Shadow exception!
+	Error from slot1@n21.lsc.ic.unicamp.br: Failed to open '/home/tiago.almeida/gemmini.cluster/results/mul16s_HHP.out' as standard output: No such file or directory (errno 2)
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (126778.000.000) 04/09 14:32:51 Job was held.
+	Error from slot1@n21.lsc.ic.unicamp.br: Failed to open '/home/tiago.almeida/gemmini.cluster/results/mul16s_HHP.out' as standard output: No such file or directory (errno 2)
+	Code 7 Subcode 2
+...
+013 (126778.000.000) 04/09 15:50:40 Job was released.
+	via condor_release (by user tiago.almeida)
+...
+007 (126778.000.000) 04/09 15:50:40 Shadow exception!
+	Error from slot1@n21.lsc.ic.unicamp.br: Failed to open '/home/tiago.almeida/gemmini.cluster/results/mul16s_HHP.out' as standard output: No such file or directory (errno 2)
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (126778.000.000) 04/09 15:50:40 Job was held.
+	Error from slot1@n21.lsc.ic.unicamp.br: Failed to open '/home/tiago.almeida/gemmini.cluster/results/mul16s_HHP.out' as standard output: No such file or directory (errno 2)
+	Code 7 Subcode 2
+...
+013 (126778.000.000) 04/09 15:51:14 Job was released.
+	via condor_release (by user tiago.almeida)
+...
+001 (126778.000.000) 04/09 15:51:14 Job executing on host: <10.68.100.16:29665?addrs=10.68.100.16-29665>
+...
+006 (126778.000.000) 04/09 15:51:22 Image size of job updated: 12608
+	5  -  MemoryUsage of job (MB)
+	4524  -  ResidentSetSize of job (KB)
+...
+006 (126778.000.000) 04/09 15:56:23 Image size of job updated: 12744
+	5  -  MemoryUsage of job (MB)
+	4524  -  ResidentSetSize of job (KB)
+...
+006 (126778.000.000) 04/09 16:01:24 Image size of job updated: 12880
+	5  -  MemoryUsage of job (MB)
+	4524  -  ResidentSetSize of job (KB)
+...
+006 (126778.000.000) 04/09 16:06:24 Image size of job updated: 13016
+	5  -  MemoryUsage of job (MB)
+	4524  -  ResidentSetSize of job (KB)
+...
+006 (126778.000.000) 04/09 16:11:24 Image size of job updated: 13160
+	5  -  MemoryUsage of job (MB)
+	4524  -  ResidentSetSize of job (KB)
+...
+006 (126778.000.000) 04/09 16:16:25 Image size of job updated: 13300
+	5  -  MemoryUsage of job (MB)
+	4524  -  ResidentSetSize of job (KB)
+...
+006 (126778.000.000) 04/09 16:21:25 Image size of job updated: 13440
+	5  -  MemoryUsage of job (MB)
+	4524  -  ResidentSetSize of job (KB)
+...
+006 (126778.000.000) 04/09 16:26:25 Image size of job updated: 13580
+	5  -  MemoryUsage of job (MB)
+	4524  -  ResidentSetSize of job (KB)
+...
+006 (126778.000.000) 04/09 16:31:26 Image size of job updated: 13628
+	5  -  MemoryUsage of job (MB)
+	4524  -  ResidentSetSize of job (KB)
+...
+006 (126778.000.000) 04/09 16:36:27 Image size of job updated: 13632
+	5  -  MemoryUsage of job (MB)
+	4528  -  ResidentSetSize of job (KB)
+...
+005 (126778.000.000) 04/22 01:28:57 Job terminated.
+	(1) Normal termination (return value 123)
+		Usr 123 16:57:04, Sys 0 06:13:57  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 123 16:57:04, Sys 0 06:13:57  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                10        10
+	   Disk (KB)            :        1        1   6834358
+	   Memory (MB)          :        5        1         1
+...

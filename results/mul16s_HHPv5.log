@@ -1,0 +1,141 @@
+000 (126776.000.000) 04/07 18:09:17 Job submitted from host: <10.68.254.1:20309?addrs=10.68.254.1-20309>
+...
+007 (126776.000.000) 04/07 18:09:32 Shadow exception!
+	Error from slot1@n21.lsc.ic.unicamp.br: Failed to open '/home/tiago.almeida/gemmini.cluster/results/mul16s_HHPv5.out' as standard output: No such file or directory (errno 2)
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (126776.000.000) 04/07 18:09:32 Job was held.
+	Error from slot1@n21.lsc.ic.unicamp.br: Failed to open '/home/tiago.almeida/gemmini.cluster/results/mul16s_HHPv5.out' as standard output: No such file or directory (errno 2)
+	Code 7 Subcode 2
+...
+013 (126776.000.000) 04/08 18:34:28 Job was released.
+	via condor_release (by user tiago.almeida)
+...
+007 (126776.000.000) 04/08 18:34:28 Shadow exception!
+	Error from slot1@n21.lsc.ic.unicamp.br: Failed to open '/home/tiago.almeida/gemmini.cluster/results/mul16s_HHPv5.out' as standard output: No such file or directory (errno 2)
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (126776.000.000) 04/08 18:34:28 Job was held.
+	Error from slot1@n21.lsc.ic.unicamp.br: Failed to open '/home/tiago.almeida/gemmini.cluster/results/mul16s_HHPv5.out' as standard output: No such file or directory (errno 2)
+	Code 7 Subcode 2
+...
+013 (126776.000.000) 04/08 21:57:15 Job was released.
+	via condor_release (by user tiago.almeida)
+...
+007 (126776.000.000) 04/08 21:57:16 Shadow exception!
+	Error from slot1@n21.lsc.ic.unicamp.br: Failed to open '/home/tiago.almeida/gemmini.cluster/results/mul16s_HHPv5.out' as standard output: No such file or directory (errno 2)
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (126776.000.000) 04/08 21:57:16 Job was held.
+	Error from slot1@n21.lsc.ic.unicamp.br: Failed to open '/home/tiago.almeida/gemmini.cluster/results/mul16s_HHPv5.out' as standard output: No such file or directory (errno 2)
+	Code 7 Subcode 2
+...
+013 (126776.000.000) 04/09 08:47:42 Job was released.
+	via condor_release (by user tiago.almeida)
+...
+001 (126776.000.000) 04/09 08:47:55 Job executing on host: <10.68.100.17:10867?addrs=10.68.100.17-10867>
+...
+006 (126776.000.000) 04/09 08:48:03 Image size of job updated: 12420
+	5  -  MemoryUsage of job (MB)
+	4264  -  ResidentSetSize of job (KB)
+...
+006 (126776.000.000) 04/09 08:53:04 Image size of job updated: 12600
+	5  -  MemoryUsage of job (MB)
+	4264  -  ResidentSetSize of job (KB)
+...
+006 (126776.000.000) 04/09 08:58:05 Image size of job updated: 12800
+	5  -  MemoryUsage of job (MB)
+	4264  -  ResidentSetSize of job (KB)
+...
+006 (126776.000.000) 04/09 09:03:05 Image size of job updated: 13000
+	5  -  MemoryUsage of job (MB)
+	4264  -  ResidentSetSize of job (KB)
+...
+006 (126776.000.000) 04/09 09:08:04 Image size of job updated: 13176
+	5  -  MemoryUsage of job (MB)
+	4264  -  ResidentSetSize of job (KB)
+...
+006 (126776.000.000) 04/09 12:53:29 Image size of job updated: 13176
+	5  -  MemoryUsage of job (MB)
+	4476  -  ResidentSetSize of job (KB)
+...
+006 (126776.000.000) 04/09 13:13:31 Image size of job updated: 13332
+	5  -  MemoryUsage of job (MB)
+	4476  -  ResidentSetSize of job (KB)
+...
+006 (126776.000.000) 04/09 13:18:29 Image size of job updated: 13520
+	5  -  MemoryUsage of job (MB)
+	4476  -  ResidentSetSize of job (KB)
+...
+006 (126776.000.000) 04/09 13:23:31 Image size of job updated: 13528
+	5  -  MemoryUsage of job (MB)
+	4484  -  ResidentSetSize of job (KB)
+...
+006 (126776.000.000) 04/09 16:40:50 Image size of job updated: 1013592
+	5  -  MemoryUsage of job (MB)
+	4484  -  ResidentSetSize of job (KB)
+...
+004 (126776.000.000) 04/09 16:40:50 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 3 06:39:14, Sys 0 00:07:56  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                10        10
+	   Disk (KB)            :        1        1    625709
+	   Memory (MB)          :        5        1         1
+...
+009 (126776.000.000) 04/09 16:40:50 Job was aborted by the user.
+	via condor_rm (by user tiago.almeida)
+...
+000 (126783.000.000) 04/09 16:41:54 Job submitted from host: <10.68.254.1:20309?addrs=10.68.254.1-20309>
+...
+001 (126783.000.000) 04/09 16:42:07 Job executing on host: <10.68.100.17:10867?addrs=10.68.100.17-10867>
+...
+006 (126783.000.000) 04/09 16:42:16 Image size of job updated: 4512
+	5  -  MemoryUsage of job (MB)
+	4500  -  ResidentSetSize of job (KB)
+...
+006 (126783.000.000) 04/09 16:47:18 Image size of job updated: 4712
+	5  -  MemoryUsage of job (MB)
+	4500  -  ResidentSetSize of job (KB)
+...
+006 (126783.000.000) 04/09 16:52:17 Image size of job updated: 4908
+	5  -  MemoryUsage of job (MB)
+	4500  -  ResidentSetSize of job (KB)
+...
+006 (126783.000.000) 04/09 16:57:19 Image size of job updated: 5104
+	5  -  MemoryUsage of job (MB)
+	4500  -  ResidentSetSize of job (KB)
+...
+006 (126783.000.000) 04/09 17:02:20 Image size of job updated: 5304
+	5  -  MemoryUsage of job (MB)
+	4500  -  ResidentSetSize of job (KB)
+...
+006 (126783.000.000) 04/09 17:07:18 Image size of job updated: 5500
+	5  -  MemoryUsage of job (MB)
+	4500  -  ResidentSetSize of job (KB)
+...
+006 (126783.000.000) 04/09 17:12:20 Image size of job updated: 5532
+	5  -  MemoryUsage of job (MB)
+	4504  -  ResidentSetSize of job (KB)
+...
+005 (126783.000.000) 04/19 01:34:30 Job terminated.
+	(1) Normal termination (return value 123)
+		Usr 93 12:00:42, Sys 0 03:55:39  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 93 12:00:42, Sys 0 03:55:39  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                10        10
+	   Disk (KB)            :        1        1    625703
+	   Memory (MB)          :        5        1         1
+...
