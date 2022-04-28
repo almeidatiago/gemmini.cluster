@@ -6,6 +6,6 @@ output      = results/mul16s.out
 error       = results/mul16s.err
 log         = results/mul16s.log
 
-request_cpus = 10
+request_cpus = 16
 queue 1
 

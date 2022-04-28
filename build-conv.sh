@@ -7,6 +7,7 @@ source ~/chipyard/env.sh
 BATCHES=$(seq 1 10)
 IN_DIMS=$(seq 10 10 100)
 SRC=$(pwd)/src/conv-def.c
+#SRC=~/chipyard/generators/gemmini/software/gemmini-rocc-tests/bareMetalC/conv-def.c
 OUT=$(pwd)/build
 
 mkdir -p $OUT
